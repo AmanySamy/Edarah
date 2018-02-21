@@ -1,0 +1,66 @@
+// Global Variable
+$main-color:#B9232C;
+$second-color:#554F51;
+
+// Start Navigation area
+.top-area{ 
+    background: $main-color;   
+    .right-nav{
+        background: $second-color;
+        position : relative;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 4px 15px 4px;
+            border-color: $second-color $second-color #fff #FFF;
+            left: 0px;
+            top: 0px;           
+        }       
+        ul{
+            width: 90%;
+            margin: 0px auto;
+            li{
+                padding: 5px 10px;
+                border-left: 1px solid #cccdce;
+                a{
+                    color: #cccdce;
+                }
+            }
+        }
+    }
+    .tele-phone{
+        background: $main-color;
+        color: #fff;
+        padding: 10px;
+        position : relative;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 5px 20px 5px;
+            border-color:#FFF  #fff $main-color $main-color ;
+            right: 0px;
+            top: 0px;            
+        }
+        .call{
+            width: 90%;
+            margin: auto;
+            .fa{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            span{
+                font-weight: 700;
+            }
+        }
+        
+    }
+}
+// End Navigation area
