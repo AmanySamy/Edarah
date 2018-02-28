@@ -11,95 +11,175 @@
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
-		<a class="navbar-brand" href="#">Navbar</a>
-		<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		
-	  
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#">Disabled</a>
-			</li>
-		  </ul>
-		  <form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		  </form>
-		</div>
-	</nav>-->
-	<!-- Star Navigation Area -->
-	<nav class="navbar">
-		<!-- Start Top Area -->
-		<div class="top-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-8">
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#">الرئيسية</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">عن الشركة</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">اتصل بنا</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-sm-4">
-						<div class="call">
-							<i class="fa fa-phone"></i>
-							<span> الهاتف /</span>
-							<span> 987 0003 92 </span>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-		<!-- End Top Area -->
-
-		<!-- Start Main Navbar -->
+<body>	
+	<!-- Start Top Area -->
+	<div class="top-area">
 		<div class="container">
 			<div class="row">
-				<!-- Navbar Logo -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
-						<i class="fa fa-bars"></i>
-					</button>
-					<a class="navbar-brand" href="http://eadarah.sa/"><img src="img/logo.jpg"></a>
-				</div>
-				<!-- Navbar Links -->
-				<div class="collapse navbar-collapse" id="nav-links">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#"><i class="fa fa-home"></i></a></li>
-						<li><a href="#">الشركة</a></li>
-						<li><a href="#">الأخبار</a></li>
-						<li><a href="#">المشاريع</a></li>
-						<li><a href="#">شركاء النجاح</a></li>
-						<li><a href="#">الموظفين</a></li>
-						<li><a href="#">طلب توظيف</a></li>
-						<li><a href="#">اتصل بنا</a></li>
+				<div class="col-lg-9">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">عن الشركة</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
 					</ul>
+				</div>
+				<div class="col-lg-3">
+					<div class="call">
+						<i class="fa fa-phone"></i>
+						<span> الهاتف /</span>
+						<span> 987 0003 92 </span>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- End Top Area -->
+	
+	<!-- Star Navigation Area -->
+	<nav class="navbar navbar-toggleable-md">
+		<div class="container">		
+			<!-- Navbar Logo -->
+			<a class="navbar-brand" href="index.html"><img src="img/logo.jpg"></a>
+			<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="nav-links">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item home">
+						<a class="nav-link" href="#"><i class="fa fa-home"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">الشركة</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">الأخبار</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">المشاريع</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">شركاء النجاح</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">الموظفين</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">طلب توظيف</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">اتصل بنا</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navigation Area -->
+
+	<!-- Start Header [Carousel] -->
+	<div class="owl-carousel owl-theme" id="mainSlider">
+		<!-- Item1 -->
+		<div class="owl-item item1">
+			<!-- <img class="img-responsive" src="img/slide01.jpg" class="img-responsive" alt=""> -->
+			<div class="overlay">
+				<div class="content text-center">
+					<h1 class="font-weight-bold">افتتاح مطعم صب واي ساسكو الرمال</h1><br>
+					<p>تم بحمد الله افتتاح فرع سلسة مطاعم صب واي التابعه لشركة اداره وذلك في يوم الأثنين الموافق 1439/02/17 هـ</p>
 				</div>
 			</div>
 		</div>
-		<!-- End Main Navbar -->
-	</nav>
-	<!-- End Navigation Area -->
+		<!-- Item2 -->
+		<div class="owl-item item2">
+			<!-- <img src="img/slide02.jpg" class="img-responsive" alt=""> -->
+			<div class="overlay">
+				<div class="content text-center">
+					<h1 class="font-weight-bold">افتتاح مطعم صب واي ساسكو الرمال</h1><br>
+					<p>تم بحمد الله افتتاح فرع سلسة مطاعم صب واي التابعه لشركة اداره وذلك في يوم الأثنين الموافق 1439/02/17 هـ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Header [Carousel] -->
+
+	<!-- End Header [Carousel] -->
+	<section class="about text-center">
+		<div class="container">
+			<div class="owl-carousel owl-theme" id="aboutSlider">
+				<!-- Widget 1 -->
+				<div class=" owl-item">
+					<div class="widget">
+						<i class="fa fa-pencil"></i>
+						<h2>عن الشركة</h2>
+						<p>شاهد ملف الشركة</p>
+						<button class="btn">التفاصيل</button>
+					</div>
+				</div>
+				<!-- Widget 2 -->
+				<div class="owl-item">
+					<div class="widget">
+						<i class="fa fa-cog"></i>
+						<h2>خدمات الشركة</h2>
+						<p>نقدم العديد من الخدمات</p>
+						<button class="btn">التفاصيل</button>
+					</div>
+				</div>
+				<!-- Widget 1 -->
+				<div class="owl-item">
+					<div class="widget">
+						<i class="fa fa-check-circle-o"></i>
+						<h2>مميزات الشركة</h2>
+						<p>لماذا شركة إدارة للتنمية؟</p>
+						<button class="btn">التفاصيل</button>
+					</div>
+				</div>
+				<!-- Widget 1 -->
+				<div class="owl-item">
+					<div class="widget">
+						<i class="fa fa-line-chart"></i>
+						<h2>المشاريع</h2>
+						<p>شاهد مشاريع الشركة</p>
+						<button class="btn">التفاصيل</button>
+					</div>
+				</div>
+				<!-- Widget 1 -->
+				<div class="owl-item">
+					<div class="widget">
+						<i class="fa fa-phone"></i>
+						<h2>وسائل الاتصال</h2>
+						<p>تعرف علي وسائل الاتصال</p>
+						<button class="btn">التفاصيل</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Header [Carousel] -->
+	<div class="clearfix"></div>
+	<!-- خدمات الشركة -->
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2>خدمات الشركة</h2>
+					<div class="card">
+						
+					</div>
+				</div>
+				<div class="col">
+
+				</div>
+				<div class="col">
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- خدمات الشركة -->
+
 	
 	
 	<script src = "js/jquery-3.2.1.min.js"></script>
-	<script src = "js/owl.carousel.min.js"></script>
+	<script src = "js/owl.carousel.js"></script>
 	<script src = "js/tether.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
 	<script src = "js/jquery.nicescroll.min.js"></script>

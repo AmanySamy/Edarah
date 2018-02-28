@@ -1,17 +1,163 @@
-/* Global */
-body{
-	height : 4000px;
-}
-/*=============Start Our Framework ==============*/
-.overlay{
-	position : absolute;
-	width : 100%;
-	height : 100%;
-	top : 0;
-	left : 0;
-	
-}
-.redSpan{
-	color : #FE0036;
-}
-/*=============End Our Framework ==============*/
+/* Start Top area */
+.top-area {
+  background: url("../img/top-bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40px;
+  position: relative; }
+  .top-area .nav .nav-item .nav-link {
+    border-left: 1px solid #cccdce;
+    color: #FFF;
+    font-size: 12px; }
+    .top-area .nav .nav-item .nav-link:hover, .top-area .nav .nav-item .nav-link:focus, .top-area .nav .nav-item .nav-link:active {
+      color: #cccdce; }
+  .top-area .call {
+    text-align: left;
+    color: #FFF;
+    padding: .5em; }
+    .top-area .call .fa {
+      font-size: 20px; }
+    .top-area .call span {
+      font-weight: 700; }
+
+@media (max-width: 991px) {
+  .top-area {
+    background: #554F51; }
+    .top-area .nav .nav-link {
+      padding: 1em; }
+    .top-area .call {
+      position: absolute;
+      background: #B9232C;
+      top: -42;
+      left: 0; } }
+/* End Top area */
+/* Start Navbar */
+.navbar {
+  background-color: #FFF;
+  border-bottom: 3px solid #B9232C;
+  padding: 30px 0px; }
+  .navbar .navbar-toggler {
+    color: #FFF;
+    margin: 1em; }
+  .navbar .nav-item {
+    padding: 0px 5px;
+    margin-left: 3px;
+    border-left: 1px solid #cccdce;
+    transition: all .5s ease-in;
+    /* when nav-item is active */ }
+    .navbar .nav-item .nav-link {
+      color: #000;
+      font-weight: 600; }
+      .navbar .nav-item .nav-link i {
+        color: #FFF;
+        font-size: 20px;
+        border-radius: 5px; }
+    .navbar .nav-item:first-of-type {
+      border: 0;
+      margin: 0; }
+      .navbar .nav-item:first-of-type .nav-link {
+        background-color: #B9232C;
+        border-radius: 5px; }
+    .navbar .nav-item:last-of-type {
+      border: 0; }
+    .navbar .nav-item.active .nav-link, .navbar .nav-item:hover .nav-link, .navbar .nav-item:focus .nav-link {
+      color: #B9232C; }
+
+/* End Navbar */
+#mainSlider {
+  direction: ltr;
+  overflow: hidden;
+  box-shadow: 0px 4px 180px #6b6467; }
+  #mainSlider .owl-item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    #mainSlider .owl-item .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #mainSlider .owl-item .overlay .content p {
+        font-size: 22px;
+        width: 80%;
+        margin: auto; }
+  #mainSlider .item1 {
+    background-image: url("../img/slide01.jpg"); }
+  #mainSlider .item2 {
+    background-image: url("../img/slide02.jpg"); }
+  #mainSlider .owl-nav {
+    margin: 0; }
+  #mainSlider .owl-prev, #mainSlider .owl-next {
+    position: absolute;
+    top: 40%;
+    background: transparent !important;
+    opacity: 1 !important; }
+  #mainSlider .owl-prev {
+    left: 50px; }
+  #mainSlider .owl-next {
+    right: 50px; }
+  #mainSlider .fa {
+    font-size: 25px;
+    border: 3px solid #FFF;
+    padding: 15.5px 19px;
+    border-radius: 50%;
+    color: #FFF; }
+
+/*====================== End Header ======================*/
+/*====================== Start About Section ======================*/
+.about {
+  margin-top: -120px;
+  z-index: 2; }
+  .about .owl-carousel {
+    box-shadow: none;
+    direction: ltr;
+    overflow: hidden; }
+  .about .owl-item {
+    width: 100%; }
+  .about .widget {
+    box-shadow: 0px 0px 4px #554F51;
+    background: #FFF;
+    padding: 10px 0px;
+    margin-bottom: 20px; }
+    .about .widget .fa {
+      font-size: 50px;
+      padding: 20px;
+      color: #554F51; }
+    .about .widget h2 {
+      font-size: 1.5rem;
+      font-weight: 600; }
+    .about .widget p {
+      color: #7c7678;
+      font-size: 18px; }
+    .about .widget button {
+      background-color: #B9232C;
+      color: #FFF;
+      font-size: 17px;
+      padding: 9px 25px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: all .3s ease-in-out; }
+      .about .widget button:hover {
+        background-color: #554F51; }
+
+/*====================== End About Section ======================*/
+/*====================== Start Services Section ======================*/
+.services {
+  padding: 40px; }
+
+/*====================== End Services Section ======================*/
+
+/*# sourceMappingURL=style.css.map */
