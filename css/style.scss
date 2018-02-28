@@ -223,6 +223,9 @@ body{
         }
         
     }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: $main-color;
+    }
 }
 /*====================== End About Section ======================*/
 /*====================== Start Services Section ======================*/
