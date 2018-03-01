@@ -1,3 +1,9 @@
+body {
+  font-family: 'DroidArabicKufiRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Start Top area */
 .top-area {
   background: url("../img/top-bg.jpg") no-repeat center;
@@ -33,7 +39,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 688px) and (max-width: 991px) {
   .top-area {
     background: #554F51;
   }
@@ -48,6 +54,28 @@
   }
 }
 
+@media (max-width: 687px) {
+  .top-area {
+    background: #554F51;
+    height: 70px;
+  }
+  .top-area .container {
+    width: 100%;
+    padding: 0px;
+  }
+  .nav {
+    background: #554F51;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .call {
+    background: #B9232C;
+    width: 100%;
+    padding: .5em 15px !important;
+    text-align: right !important;
+  }
+}
+
 /* End Top area */
 /* Start Navbar */
 .navbar {
@@ -57,8 +85,42 @@
 }
 
 .navbar .navbar-toggler {
-  color: #FFF;
+  outline: 0;
+  overflow: hidden;
   margin: 1em;
+  width: 100%;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: #B9232C;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon .fa {
+  color: #FFF;
+}
+
+.navbar .navbar-toggler .menu {
+  background-color: #554F51;
+  color: #FFF;
+  width: 90%;
+  display: block;
+  text-align: right;
+  transition: all .3s ease-in-out;
+  height: 35px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.navbar .navbar-toggler .menu:hover {
+  background-color: #B9232C;
 }
 
 .navbar .nav-item {
@@ -71,7 +133,8 @@
 
 .navbar .nav-item .nav-link {
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .navbar .nav-item .nav-link i {
@@ -87,7 +150,7 @@
 
 .navbar .nav-item:first-of-type .nav-link {
   background-color: #B9232C;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .navbar .nav-item:last-of-type {
@@ -98,11 +161,27 @@
   color: #B9232C;
 }
 
+@media (max-width: 992px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #ccc;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding-right: 15px;
+  }
+}
+
 /* End Navbar */
 #mainSlider {
   direction: ltr;
   overflow: hidden;
-  box-shadow: 0px 4px 180px #6b6467;
+  box-shadow: 0px 100px 80px #c8c4c5;
 }
 
 #mainSlider .owl-item {
@@ -200,19 +279,22 @@
 }
 
 .about .widget h2 {
-  font-size: 1.5rem;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 22px;
 }
 
 .about .widget p {
   color: #7c7678;
-  font-size: 18px;
+  font-size: 13px;
+  color: #333333;
+  line-height: 18px;
 }
 
 .about .widget button {
   background-color: #B9232C;
   color: #FFF;
-  font-size: 17px;
+  font-size: 14px;
   padding: 9px 25px;
   border-radius: 2px;
   cursor: pointer;
@@ -232,6 +314,184 @@
 /*====================== Start Services Section ======================*/
 .services {
   padding: 40px;
+}
+
+.services .services-title {
+  color: #B9232C;
+  margin-bottom: 20px;
+}
+
+.services #serviceSlider {
+  position: relative;
+}
+
+.services #serviceSlider .owl-nav {
+  display: block !important;
+  position: absolute;
+  left: 10px;
+  top: -69px;
+}
+
+.services #serviceSlider .owl-next,
+.services #serviceSlider .owl-prev {
+  color: #B9232C;
+  background: #FFF;
+  border: 2px solid #B9232C;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.services .card {
+  box-shadow: 0px 0px 1px #777;
+  height: 310px;
+}
+
+.services .card .card-img-top {
+  transition: all .3s ease-in-out;
+}
+
+.services .card .card-img-top:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.services .card .card-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #484b50;
+}
+
+.services .card .card-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #484b50;
+}
+
+.services .card .card-text a {
+  color: #B9232C;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.services .news li {
+  margin: 10px 0px;
+  clear: both;
+  overflow: hidden;
+}
+
+.services .news li span {
+  background: #e2e2e2;
+  color: #595958;
+  padding: 10px;
+  margin: 5px 0px 5px 10px;
+  display: block;
+  float: right;
+  text-align: center;
+  font-weight: bold;
+  width: 55px;
+  height: 60;
+  line-height: 20px;
+}
+
+.services .news li span small {
+  display: block;
+}
+
+.services .news li a {
+  color: #848182;
+  text-decoration: none;
+  font-size: 13;
+  line-height: 24px;
+  transition: all .3s ease-in-out;
+}
+
+.services .news li a:hover {
+  color: #B9232C;
+}
+
+.services .show-all {
+  background: #B9232C;
+  color: #FFF;
+  margin: auto;
+  display: block;
+  width: 70%;
+  padding: 12px;
+  font-size: 13px;
+  transition: all .3s ease-in-out;
+}
+
+.services .show-all:hover {
+  background-color: #554F51;
+}
+
+.services .mail-list {
+  color: #848182;
+}
+
+.services .mail-list .nav {
+  margin-bottom: 20px;
+}
+
+.services .mail-list .subscribe {
+  font-size: 12px;
+  color: #2b5372;
+  margin-top: 30px;
+}
+
+.services .mail-list form {
+  margin: 40px 0px;
+  overflow: hidden;
+}
+
+.services .mail-list form #email {
+  background: #F8F9F9;
+  box-shadow: none;
+  border: 1px solid #CCCCCC;
+  padding: 2px;
+  color: #333333;
+  font-size: 13px;
+  height: 34px;
+  width: 73%;
+  float: right;
+}
+
+.services .mail-list form #subscribe {
+  background: #B9232C;
+  color: #FFF;
+  height: 32px;
+  border: 0;
+  padding: 5px 15px;
+}
+
+.services .mail-list .freq {
+  background: url("../img/faq-banner.jpg");
+  background-size: cover;
+  height: 200px;
+  padding: 10px;
+}
+
+.services .mail-list .freq a {
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .mail-list .freq a:hover {
+  color: #FFBE00;
+}
+
+.services .mail-list .freq a img {
+  display: block;
+  margin: 10px auto;
+}
+
+.services .mail-list .freq a big, .services .mail-list .freq a small {
+  display: block;
+  margin: 5px;
 }
 
 /*====================== End Services Section ======================*/

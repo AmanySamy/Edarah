@@ -49,10 +49,8 @@ $(function() {
 	});
 	/*--------- Call Owl Carousel -----*/
 	$("#aboutSlider").owlCarousel({
-		// rtl:true,
 		loop:true,
 		margin:15,
-		// nav:true,
 		dots:true, 
 		responsiveClass: true, 
 
@@ -64,12 +62,35 @@ $(function() {
 
 			},
 			600:{
-				items:3,
+				items:2,
 				autoplay:true
 			},
 			1000:{
 				items:5
 			}
+		}
+	});
+	/*--------- Call Owl Carousel -----*/
+	$("#serviceSlider").owlCarousel({
+		loop:true,
+		rtl:true,
+		// margin:15,
+		dots:false, 
+		nav:true,
+		responsiveClass: true, 
+		navText :['<i class="fa fa-chevron-right"></i>','<i class="fa fa-chevron-left"></i>'],
+		responsive:{
+			0:{
+				items:1,
+				autoplay:true,
+				// loop:true
+
+			},
+			768:{
+				items:2,
+				autoplay:true
+			}
+			
 		}
 	});
 

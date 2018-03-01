@@ -2,7 +2,9 @@
 $main-color:#B9232C;
 $second-color:#554F51;
 body{
-
+    font-family: 'DroidArabicKufiRegular'; 
+    font-weight: normal; 
+   font-style: normal; 
 }
 
 /* Start Top area */
@@ -41,7 +43,7 @@ body{
     }
     
 }
-@media(max-width: 991px) {
+@media(min-width: 688px) and (max-width: 991px) {
     .top-area{
         background: $second-color;
         .nav{
@@ -55,8 +57,28 @@ body{
             top: -42;
             left: 0;
         }
+    }    
+}
+@media(max-width: 687px){
+    .top-area{
+        background: $second-color;
+        height: 70px;
+        .container{
+            width:100%;
+            padding: 0px;
+        }
     }
-    
+    .nav {
+        background: $second-color; 
+        width: 100%;
+        padding: 0 15px;
+    } 
+    .call{
+        background: #B9232C;
+        width: 100%;
+        padding: .5em 15px !important;
+        text-align: right !important;
+    }
 }
 /* End Top area */
 
@@ -66,9 +88,41 @@ body{
     border-bottom: 3px solid $main-color;
     padding: 30px 0px;
     .navbar-toggler{
-        color: #FFF;
-        // background-color: $main-color;
+        outline: 0;
+        overflow: hidden;
         margin: 1em;
+        width: 100%;
+        
+        .navbar-toggler-icon{
+            background-color: $main-color;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+            width: 35px;
+            .fa{
+                color: #FFF;
+            }
+        }
+        .menu{
+            background-color: $second-color;
+            color: #FFF;
+            width: 90%;
+            display: block;
+            text-align: right;
+            transition: all .3s ease-in-out;
+            height: 35px;
+            padding: 0px 15px;
+            display: flex;
+            align-items: center;
+            float: right;
+            
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+
     }
     .nav-item{
         padding: 0px 5px;
@@ -77,7 +131,8 @@ body{
         transition: all .5s ease-in;
         .nav-link{
             color: #000;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 13px;
             i{
                 color: #FFF;
                 font-size: 20px;
@@ -90,7 +145,7 @@ body{
             margin: 0;
             .nav-link{
                 background-color: $main-color;
-                border-radius: 5px;
+                border-radius: 4px;
             }
         }
         &:last-of-type{
@@ -106,13 +161,30 @@ body{
     }
     
 }
+@media (max-width: 992px)
+{
+    .navbar-brand{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav {
+        width: 100%;
+        .nav-item{
+            border-bottom: 1px solid #ccc;
+            .nav-link{
+                padding-right: 15px;
+            }
+        }
+    } 
+}
+
 /* End Navbar */
 
 
 #mainSlider{
     direction: ltr;
     overflow: hidden;
-    box-shadow: 0px 4px 180px #6b6467;
+    box-shadow: 0px 100px 80px #c8c4c5;
     .owl-item{
             height: 100%;
             width: 100%;
@@ -201,17 +273,20 @@ body{
             color : $second-color;
         }
         h2{
-            font-size: 1.5rem;
+            font-size: 15px;
             font-weight: 600;
+            line-height: 22px;
         }
         p{
             color: #7c7678;
-            font-size: 18px;
+            font-size: 13px;
+            color : #333333;
+            line-height: 18px;
         }
         button{
             background-color: #B9232C;
             color: #FFF;
-            font-size: 17px;
+            font-size: 14px;
             padding: 9px 25px;
             border-radius: 2px;
             cursor: pointer;
@@ -231,6 +306,160 @@ body{
 /*====================== Start Services Section ======================*/
 .services{
     padding: 40px;
+    .services-title{
+        color: $main-color;
+        margin-bottom: 20px; 
+    }
+    #serviceSlider{
+        position: relative;
+        .owl-nav{
+            display: block !important;
+            position: absolute;
+            left: 10px;
+            top: -69px;
+        }
+        .owl-next,
+        .owl-prev{
+            color: $main-color;
+            background: #FFF;
+            border: 2px solid #B9232C;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+    }
+    .card{
+        box-shadow: 0px 0px 1px #777;
+        height: 310px;
+        .card-img-top{
+            transition: all .3s ease-in-out;
+            &:hover{
+                opacity: .7;
+                cursor: pointer;
+            }
+        }
+        .card-title{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #484b50;
+        }
+        .card-text{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #484b50;
+            a{
+                color: $main-color;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 24px;
+
+            }
+        }
+    }
+    .news{
+        li{
+            margin: 10px 0px;
+            clear: both;
+            overflow: hidden;
+            span{
+                background: #e2e2e2;
+                color: #595958;
+                padding: 10px;
+                margin: 5px 0px 5px 10px;
+                display: block;
+                float: right;
+                text-align: center;
+                font-weight: bold;
+                width: 55px;
+                height: 60;
+                line-height: 20px;
+                small{
+                    display: block;
+                }
+            }
+            a{
+                color: #848182;
+                text-decoration: none;
+                font-size: 13;
+                line-height: 24px;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    .show-all{
+        background: #B9232C;
+        color: #FFF;
+        margin: auto;
+        display: block;
+        width: 70%;
+        padding: 12px;
+        font-size: 13px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: $second-color;
+        }
+    }
+    .mail-list{
+        color: #848182;
+        .nav{
+            margin-bottom : 20px;
+        }
+        .subscribe{
+            font-size: 12px;
+            color: #2b5372;
+            margin-top: 30px;
+        }
+        form{
+            margin: 40px 0px;
+            overflow: hidden;
+            #email{
+                background: #F8F9F9;
+                box-shadow: none;
+                border: 1px solid #CCCCCC;
+                padding: 2px;
+                color: #333333;
+                font-size: 13px;
+                height: 34px;
+                width: 73%;
+                float: right;
+            }
+            #subscribe{
+                background: #B9232C;
+                color: #FFF;
+                height: 32px;
+                border: 0;
+                padding: 5px 15px;
+
+            }
+        }
+        .freq{
+            background: url("../img/faq-banner.jpg");
+            background-size: cover;
+            height: 200px;
+            padding: 10px;
+            a{
+                color:#FFF;
+                text-align: center;
+                text-decoration: none;
+                transition: all.3s ease-in-out;
+                &:hover{
+                    color: #FFBE00;
+                }
+                img{
+                    display: block;
+                    margin: 10px auto;
+                }
+                big, small{
+                    display: block;
+                    margin: 5px;
+                }
+            }
+        }
+    }
 }
 /*====================== End Services Section ======================*/
 

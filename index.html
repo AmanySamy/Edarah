@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi"/>
 </head>
 <body>	
 	<!-- Start Top Area -->
@@ -41,7 +42,11 @@
 			<!-- Navbar Logo -->
 			<a class="navbar-brand" href="index.html"><img src="img/logo.jpg"></a>
 			<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon">
+					<i class="fa fa-bars"></i>
+
+				</span>
+				<span class="menu">القائمة</span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="nav-links">
@@ -159,17 +164,110 @@
 	<section class="services">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<h2>خدمات الشركة</h2>
-					<div class="card">
-						
+				<!-- خدمات الشركة -->
+				<div class="col-md-6 ">
+					<h2 class="services-title">خدمات الشركة</h2>
+					<div class="owl-carousel owl-theme" id="serviceSlider">
+						<!-- الخدمة الاولي -->
+						<div class="owl-item" style="padding: 5px;">
+							<div class="card">
+								<!-- صورة الخدمة -->
+								<img class="card-img-top" src="img/services1.jpg" alt="Card image cap">
+								<div class="card-block">
+									<!-- عنوان الخدمة -->
+									<h4 class="card-title">لماذا إدارة للتنمية والتطوير؟</h4>
+									<!-- تفاصيل الخدمة -->
+									<p class="card-text"> 
+										خبرائنا الاستشاريون تم اختيارهم من ضمن مجموعه متنوعه ..
+										<a href="#" class="">التفاصيل</a>
+									</p>								
+								</div>
+							</div>						
+						</div>
+						<!-- الخدمة الثانية -->
+						<div class="owl-item" style="padding: 5px;">
+							<div class="card">
+								<!-- صورة الخدمة -->
+								<img class="card-img-top" src="img/services2.jpg" alt="Card image cap">
+								<div class="card-block">
+									<!-- عنوان الخدمة -->
+									<h4 class="card-title">
+										إدارة الأسواق والمجمعات التجارية
+									</h4>
+									<!-- تفاصيل الخدمة -->
+									<p class="card-text"> 
+										نشأت فكرة تأسيس شركة إدارة للتنمية والتطوير بعد دراسة دقيقة للسوق المحلي ..
+										<a href="#" class="">التفاصيل</a>
+									</p>								
+								</div>
+							</div>						
+						</div>
 					</div>
 				</div>
-				<div class="col">
-
+				<!-- أخر الاخبار -->
+				<div class="col-md">
+					<h2 class="services-title">أخر الأخبار</h2>
+					<!-- قائمة بأخر الاخبار -->
+					<ul class="news list-unstyled">
+						<!-- الخبر الاول -->
+						<li>
+							<a href="#">
+								<span>24<small>فبراير</small></span>
+								شركة إدارة للتنمية والتطوير تعقد اجتماعها السنوي 
+							</a>
+						</li>
+						<!-- الخبر الثاني -->
+						<li>
+							<a href="#">
+								<span>08<small>نوفمبر</small></span>
+								افتتاح مطعم صب واي ساسكو الرمال 
+							</a>
+						</li>
+						<!-- الخبر الثالث -->
+						<li>
+							<a href="#">
+								<span>19<small>يونيو</small></span>
+								الحفل التكريمي لحلقات النور النموذجية 
+							</a>
+						</li>
+						<!-- الخبر الرابع -->
+						<li>
+							<a href="#">
+								<span>19<small>يونيو</small></span>
+								افتتاح سوبرماركت بن داود فرعه الأول في مدينة الطائف في 
+							</a>
+						</li>
+					</ul>
+					<a class="btn show-all" href="#">عرض الكل</a>
 				</div>
-				<div class="col">
+				<!-- القائمة البريدية -->
+				<div class="col-md mail-list">
+					<!--  عنوان القائمة الريدية -->
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">القائمة البريدية</a>
+						</li>
+					</ul>
+					
+					<!-- اشترك في القائمة البريدية -->
+					<p class="subscribe">
+						أشترك فى القائمه البريدية كى يصلك كل جديد من الموقع على بريدك الإلكتروني
+					</p>
 
+					<!-- سجل ايميلك ليصلك كل جديد -->
+					<form action="" method="post">
+						<input type="text" placeholder="example@email.com" id="email">
+						<button type="subscribe" id="subscribe">اشترك</button>
+					</form>
+
+					<!-- الأسئلة المتكررة -->
+					<div class="freq">
+						<a href="#">
+							<img src="img/faq-icon.png" alt="">
+							<big>الاسئلة المتكررة</big>
+							<small>إجابات العديد من الأسئلة الشائعة</small>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
