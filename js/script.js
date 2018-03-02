@@ -74,7 +74,6 @@ $(function() {
 	$("#serviceSlider").owlCarousel({
 		loop:true,
 		rtl:true,
-		// margin:15,
 		dots:false, 
 		nav:true,
 		responsiveClass: true, 
@@ -90,6 +89,39 @@ $(function() {
 				items:2,
 				autoplay:true
 			}
+			
+		}
+	});
+	/*--------- Call Owl Carousel -----*/
+	$("#successSlider").owlCarousel({
+		loop:true,
+		rtl:true, 
+		nav:true,
+		responsiveClass: true, 
+		navText :['<i class="fa fa-chevron-right"></i>','<i class="fa fa-chevron-left"></i>'],
+		responsive:{
+			0:{
+				items:1,
+				autoplay:true,
+				// loop:true
+
+			},
+			496:{
+				items:2,
+				autoplay:true
+			},
+			786:{
+				items:3,
+				autoplay:true
+			},
+			992:{
+				items:4,
+				autoplay:true
+			},
+			1200:{
+				items:5,
+				autoplay:true
+			},
 			
 		}
 	});

@@ -305,12 +305,13 @@ body{
 /*====================== End About Section ======================*/
 /*====================== Start Services Section ======================*/
 .services{
-    padding: 40px;
+    padding: 40px 0px;
     .services-title{
         color: $main-color;
         margin-bottom: 20px; 
     }
     #serviceSlider{
+       
         position: relative;
         .owl-nav{
             display: block !important;
@@ -327,36 +328,7 @@ body{
             padding: 8px 10px;
         }
     }
-    .card{
-        box-shadow: 0px 0px 1px #777;
-        height: 310px;
-        .card-img-top{
-            transition: all .3s ease-in-out;
-            &:hover{
-                opacity: .7;
-                cursor: pointer;
-            }
-        }
-        .card-title{
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 20px;
-            color: #484b50;
-        }
-        .card-text{
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 24px;
-            color: #484b50;
-            a{
-                color: $main-color;
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 24px;
-
-            }
-        }
-    }
+    
     .news{
         li{
             margin: 10px 0px;
@@ -460,6 +432,108 @@ body{
             }
         }
     }
+    .service, .news-list, .mail-list{
+        margin-bottom: 30px;
+    }
+}
+.card{
+    box-shadow: 0px 0px 1px #777;
+    height: 310px;
+    .card-img-top{
+        transition: all .3s ease-in-out;
+        &:hover{
+            opacity: .7;
+            cursor: pointer;
+        }
+    }
+    .card-title{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #484b50;
+    }
+    .card-text{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #484b50;
+        a{
+            color: $main-color;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+    }
 }
 /*====================== End Services Section ======================*/
+/*====================== Start success Section ======================*/
+.success{
+    padding: 40px 0px;
+    background: #F9F9F9;
+    border-top: 1px solid #CCC;
+    .title{
+        color: $main-color;
+        margin-bottom: 20px; 
+    }
+    #successSlider{
+        position: relative;
+        .owl-nav{
+            display: block !important;
+            position: absolute;
+            left: 10px;
+            top: -69px;
+        }
+        .owl-next,
+        .owl-prev{
+            color: $main-color;
+            background: #FFF;
+            border: 2px solid #B9232C;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+        .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+            background: $main-color;
+            margin-top: 20px;
+        }
+    }
+    .card{
+        height: 150px;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        overflow:hidden; 
+        .card-img-top{
+            height: 73%;
+            max-width: 95%;
+            // margin: 2.5%;
+            border-radius: .25rem
+        }
+        .card-block{
+            background: #FAFAFA;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            max-height: 20%;
+            width: 100%;
+            justify-content: center;
+            .card-title{
+                margin: 0;
+                font-weight: normal;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $main-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/*====================== End success Section ======================*/
 

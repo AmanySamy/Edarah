@@ -313,7 +313,7 @@ body {
 /*====================== End About Section ======================*/
 /*====================== Start Services Section ======================*/
 .services {
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .services .services-title {
@@ -339,41 +339,6 @@ body {
   border: 2px solid #B9232C;
   border-radius: 50%;
   padding: 8px 10px;
-}
-
-.services .card {
-  box-shadow: 0px 0px 1px #777;
-  height: 310px;
-}
-
-.services .card .card-img-top {
-  transition: all .3s ease-in-out;
-}
-
-.services .card .card-img-top:hover {
-  opacity: .7;
-  cursor: pointer;
-}
-
-.services .card .card-title {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  color: #484b50;
-}
-
-.services .card .card-text {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #484b50;
-}
-
-.services .card .card-text a {
-  color: #B9232C;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .services .news li {
@@ -494,5 +459,123 @@ body {
   margin: 5px;
 }
 
+.services .service, .services .news-list, .services .mail-list {
+  margin-bottom: 30px;
+}
+
+.card {
+  box-shadow: 0px 0px 1px #777;
+  height: 310px;
+}
+
+.card .card-img-top {
+  transition: all .3s ease-in-out;
+}
+
+.card .card-img-top:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.card .card-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #484b50;
+}
+
+.card .card-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #484b50;
+}
+
+.card .card-text a {
+  color: #B9232C;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 /*====================== End Services Section ======================*/
+/*====================== Start success Section ======================*/
+.success {
+  padding: 40px 0px;
+  background: #F9F9F9;
+  border-top: 1px solid #CCC;
+}
+
+.success .title {
+  color: #B9232C;
+  margin-bottom: 20px;
+}
+
+.success #successSlider {
+  position: relative;
+}
+
+.success #successSlider .owl-nav {
+  display: block !important;
+  position: absolute;
+  left: 10px;
+  top: -69px;
+}
+
+.success #successSlider .owl-next,
+.success #successSlider .owl-prev {
+  color: #B9232C;
+  background: #FFF;
+  border: 2px solid #B9232C;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.success #successSlider .owl-dots .owl-dot.active span, .success #successSlider .owl-theme .owl-dots .owl-dot:hover span {
+  background: #B9232C;
+  margin-top: 20px;
+}
+
+.success .card {
+  height: 150px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.success .card .card-img-top {
+  height: 73%;
+  max-width: 95%;
+  border-radius: .25rem;
+}
+
+.success .card .card-block {
+  background: #FAFAFA;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  max-height: 20%;
+  width: 100%;
+  justify-content: center;
+}
+
+.success .card .card-block .card-title {
+  margin: 0;
+  font-weight: normal;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.success .card .card-block .card-title:hover {
+  color: #B9232C;
+  cursor: pointer;
+}
+
+/*====================== End success Section ======================*/
 /*# sourceMappingURL=style.css.map */
