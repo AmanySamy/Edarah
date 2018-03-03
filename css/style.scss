@@ -379,6 +379,7 @@ body{
         color: #848182;
         .nav{
             margin-bottom : 20px;
+            padding: 0px 15px;
         }
         .subscribe{
             font-size: 12px;
@@ -466,6 +467,14 @@ body{
         }
     }
 }
+@media (max-width: 687px){
+    .mail-list .nav {
+        background: none; 
+        width: 100%;
+        padding: 0px 37% !important; 
+   }
+}
+
 /*====================== End Services Section ======================*/
 /*====================== Start success Section ======================*/
 .success{
@@ -492,7 +501,7 @@ body{
             border-radius: 50%;
             padding: 8px 10px;
         }
-        .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span{
             background: $main-color;
             margin-top: 20px;
         }
@@ -536,4 +545,101 @@ body{
     }
 }
 /*====================== End success Section ======================*/
+/*====================== Start Footer ======================*/
+footer{
+    padding: 40px 0px 0px;
+    background: #2F2F2F;
+    .menus{
+        h2{
+            color: #FFF;
+            margin-bottom: 30px;
+        }
+        ul li{
+            a{
+               color: #BDC1C7;            
+                &:hover, &:focus, &:active{
+                    color: #FFF;
+                    text-decoration: none;
+                }
+                &:before{
+                    font-family: 'FontAwesome';
+                    content: '\f0c8';
+                    margin-left: 10px;
+                    font-size: 10px;
+                    color: #3C3C3C;
+                }
+            }
+        }
+    }
+    
+    .share{
+        color: #FFF;
+        h2{
+            font-size: 18px;
+        }
+        .app li{
+            display: inline-block;
+            i{
+                padding: 5px 30px;
+                border-radius: 15px;
+            }
+            .fa-android{
+                background: #31AB62;
+                margin-left: 4px;
+            }
+            .fa-apple{
+                background: #3171A2;
+            }
+        }
+        .social li{
+            display: inline-block;
+            i{
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                text-align: center;
+                line-height: 36px;;
+            }
+            .fa-facebook{
+                background: #4E71A8;
+            }
+            .fa-twitter{
+                background: #1CB7EB;
+            }
+            .fa-google-plus{
+                background: #E3411F;
+            }
+            .fa-instagram{
+                background: #444444;
+            }
+            .fa-youtube{
+                background: #CA3737;
+            }
+        }
+        .phone{
+            background: #393939;
+            padding: 10px;
+            ul{
+                margin: 0;
+                li{
+                    font-size: 14px;
+                    i{
+                        margin-left: 8px;
+                        color: #101010;
+
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        h2{
+            // color: #BDC1C7; 
+            color: #BDC1C7;
+            font-size: 1rem;
+            margin: 40px 0 20px; 
+        }
+    }
+}
+/*====================== End Footer ======================*/
 

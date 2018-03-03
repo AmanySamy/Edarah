@@ -398,6 +398,7 @@ body {
 
 .services .mail-list .nav {
   margin-bottom: 20px;
+  padding: 0px 15px;
 }
 
 .services .mail-list .subscribe {
@@ -498,6 +499,14 @@ body {
   line-height: 24px;
 }
 
+@media (max-width: 687px) {
+  .mail-list .nav {
+    background: none;
+    width: 100%;
+    padding: 0px 37% !important;
+  }
+}
+
 /*====================== End Services Section ======================*/
 /*====================== Start success Section ======================*/
 .success {
@@ -531,7 +540,7 @@ body {
   padding: 8px 10px;
 }
 
-.success #successSlider .owl-dots .owl-dot.active span, .success #successSlider .owl-theme .owl-dots .owl-dot:hover span {
+.success #successSlider .owl-dots .owl-dot.active span, .success #successSlider .owl-dots .owl-dot:hover span {
   background: #B9232C;
   margin-top: 20px;
 }
@@ -578,4 +587,115 @@ body {
 }
 
 /*====================== End success Section ======================*/
+/*====================== Start Footer ======================*/
+footer {
+  padding: 40px 0px 0px;
+  background: #2F2F2F;
+}
+
+footer .menus h2 {
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+footer .menus ul li a {
+  color: #BDC1C7;
+}
+
+footer .menus ul li a:hover, footer .menus ul li a:focus, footer .menus ul li a:active {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer .menus ul li a:before {
+  font-family: 'FontAwesome';
+  content: '\f0c8';
+  margin-left: 10px;
+  font-size: 10px;
+  color: #3C3C3C;
+}
+
+footer .share {
+  color: #FFF;
+}
+
+footer .share h2 {
+  font-size: 18px;
+}
+
+footer .share .app li {
+  display: inline-block;
+}
+
+footer .share .app li i {
+  padding: 5px 30px;
+  border-radius: 15px;
+}
+
+footer .share .app li .fa-android {
+  background: #31AB62;
+  margin-left: 4px;
+}
+
+footer .share .app li .fa-apple {
+  background: #3171A2;
+}
+
+footer .share .social li {
+  display: inline-block;
+}
+
+footer .share .social li i {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+}
+
+footer .share .social li .fa-facebook {
+  background: #4E71A8;
+}
+
+footer .share .social li .fa-twitter {
+  background: #1CB7EB;
+}
+
+footer .share .social li .fa-google-plus {
+  background: #E3411F;
+}
+
+footer .share .social li .fa-instagram {
+  background: #444444;
+}
+
+footer .share .social li .fa-youtube {
+  background: #CA3737;
+}
+
+footer .share .phone {
+  background: #393939;
+  padding: 10px;
+}
+
+footer .share .phone ul {
+  margin: 0;
+}
+
+footer .share .phone ul li {
+  font-size: 14px;
+}
+
+footer .share .phone ul li i {
+  margin-left: 8px;
+  color: #101010;
+}
+
+footer .copyright h2 {
+  color: #BDC1C7;
+  font-size: 1rem;
+  margin: 40px 0 20px;
+}
+
+/*====================== End Footer ======================*/
 /*# sourceMappingURL=style.css.map */
